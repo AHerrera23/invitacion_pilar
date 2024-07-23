@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+span{
+    font-family: "Cormorant Garamond", serif;
+    color: #F2022D;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+}
+h1{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 42px;
+}
+h2{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: medium;
+    font-style: italic;
+    font-size: 36px;
+}
+h3{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 26px;
+}
+.portada{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.videoFondo{
+    z-index: -1;
+    position: absolute;
+    width: 100vw; 
+    height: 100vh;
+}
+.blur{
+    z-index: -1;
+    position: absolute;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #0000008f;
+}
+.portada .marco{
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+}
+.contenidoPortada{
+    z-index: 2;
+    color: #EDEDED;
+    grid-column: 1/5;
+    grid-row: 1;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20%;
+}
+.contenidoPortada2{
+    z-index: 2;
+    color: #EDEDED;
+    grid-column: 1/5;
+    grid-row: 3/4;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+}
+@media only screen and (max-width: 800px){
+    .portada{
+        z-index: 1;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 1px;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+
+}
