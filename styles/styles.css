@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #000000;
+    background-color: #131313;
 }
 span{
     font-family: "Cormorant Garamond", serif;
@@ -105,5 +105,75 @@ h3{
         margin: 10%;
         width: 80%;
     }
-
+    /* seccion contador  */
+    .contador{
+        color: #EDEDED;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .contador .marcoContador{
+        width: 100vw;
+        grid-row: 1/5;
+        grid-column: 1/5;
+    }
+    .cuentaAtras{
+        grid-row: 2/4;
+        grid-column: 1/5;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .contadorUnificado{
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .horas{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .minutos{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .segundos{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .llegoElDia{
+        display: none;
+        grid-row: 2/4;
+        grid-column: 1/5;
+    }
+    .mapa{
+        background-color:#EDEDED;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+    }
+    .mapa .marcoMapa{
+        width: 100%;
+        height: 100%;
+        grid-row: 1/5;
+        grid-column: 1/5;
+    }
 }
