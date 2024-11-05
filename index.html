@@ -39,22 +39,22 @@
       <img class="marcoContador mobile" src="images/marco-secundario-blanco.png" alt="marco de seccion">
       <div class="cuentaAtras">
         <div class="faltaDias">
-          <h3>Faltan <span id="dias"></span> dias. </h>
+          <h3 id="diasFaltantes"> faltan <span id="dia"></span> dias.</h>
         </div>
         <div class="llegoElDia" id="cuentaTerminada">
           <h3>Hoy es el<span> gran dia</span>!</h3>
         </div>
         <div class="contadorUnificado" id="contador">
           <div class="horas">
-            <h2 id="horas"></h2>
+            <span><h2 id="horas"></h2></span>
             <p>horas</p>
           </div>
           <div class="minutos">
-            <h2 id="minutos"></h2>
+            <span><h2 id="minutos"></h2></span>
             <p>minutos</p>
           </div>
           <div class="segundos">
-            <h2 id="segundos"></h2>
+            <span><h2 id="segundos"></h2></span>
             <p>segundos</p>
           </div>
         </div>
@@ -62,6 +62,21 @@
     </section>
     <section class="mapa">
       <img class="marcoMapa" src="images/marco-negro.png" alt="">
+      <div class="datos">
+        <h3><span>Celebracion</span></h3>
+        <hr class="linea">
+        <h3>Dia</h3>
+        <p>Lunes <span>5</span> de noviembre - <span>20</span>hs</p>
+        <button class="btn">Agendar fecha</button>
+        <hr class="linea">
+        <h3>Lugar</h3>
+        <p>Salon <span>paris</span></p>
+        <button class="btn">Confirmar asistencia</button>
+        <hr class="linea">
+        <h3>Direccion</h3>
+        <p>av no se cuanto <span>N° 5555</span></p>
+        <button class="btn">Como llegar</button>
+      </div>
     </section>
     <script src="js/main.js"></script>
   </body>
