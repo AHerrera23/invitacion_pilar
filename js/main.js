@@ -52,6 +52,15 @@ let botonFecha = document.getElementById('btnFecha');
 let botonMapa= document.getElementById('btnMapa');
 // boton para confirmar asistencia
 let botonConfirmar = document.getElementById('botonDeConfirmacion');
+// boton que genera link de pago
+let botonCBU = document.getElementById('btnCBU');
+let seccionDePago = document.getElementById('seccionDePago');
+let cbu = document.getElementById('cbuOculto');
+
+botonCBU.addEventListener('click', () => {
+    seccionDePago.style.display="none";
+    cbu.style.display="flex";
+});
 botonConfirmar.addEventListener('click', ()=>{
     console.log('boton de confirmar fue presionado');
     const telefono = 5491150522026;

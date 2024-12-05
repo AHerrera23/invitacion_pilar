@@ -13,7 +13,6 @@ span{
     color: #F2022D;
     font-weight: bold;
     font-style: italic;
-    font-size: 1.6rem;
 }
 .spanTitulo{
     font-size: 3rem;
@@ -32,17 +31,27 @@ h2{
 }
 h3{
     font-family: "Cormorant Garamond", serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
     font-size: 1.8rem;
+}
+h4{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3rem;
 }
 button{
     font-family:"Cormorant Garamond", serif;
     font-weight: bold;
     font-size: 16px;
 }
+p{
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.2rem;
+}
 .portada{
-    height: 100vh;
+    height: 98vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -204,6 +213,117 @@ button{
     }
     .btn:focus{
         background-color: #b80022;
-
+    }
+    /* seccion 4 */
+    .container-4{
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color: #EDEDED;
+        text-align: center;
+    }
+    .marcoHorizantal{
+        grid-column: 1/5;
+        grid-row: 1/5;
+        width: 100%;
+        height: 100%;
+    }
+    .contenedorIcono{
+        background-color: #F2022D;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 6rem;
+        grid-column:2/4;
+        grid-row: 2/4;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: #EDEDED;
+    }
+    .vestido{
+        width: 3.2rem;
+        border-radius: 2rem;
+        grid-column: 1/1;
+        grid-row: 2/3;
+        margin-left: 1.7rem;
+    }
+    .traje{
+        width: 3.2rem;
+        border-radius: 2rem;
+        grid-column: 4/4;
+        grid-row: 3/4;
+        margin-left: 0.4rem;
+    }
+    .dressCode{
+        grid-column: 1/5;
+        grid-row: 1/1;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 2rem;
+    }
+    /* seccion 5 */
+    .container-5{
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color: #EDEDED;
+        text-align: center;
+    }
+    .contenidoDeRegalo{
+        grid-column: 5/1;
+        grid-row: 5/1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
+    }
+    .regalo{
+        width: 5rem;
+        border-radius: 3rem;
+    }
+    .btnCBU{
+        background-color: #F2022D;
+        border: none;
+        height: 30px;
+        width: 70%;
+        grid-column: 2/4;
+        grid-row: 3/5;
+        border-radius: 20px;
+        margin: 3px;
+        color: #EDEDED;
+        transition: 0.3s ease-in;
+    }
+    .btnCBU:focus{
+        background-color: #b80022;
+    }
+    .contenedorCbu{
+        grid-column: 5/1;
+        grid-row: 5/1;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
+    }
+    .blockCBU{
+        display: flex;
+        flex-direction: column;
+        background-color: #EDEDED;
+        border-radius: 1rem;
+        width: 70%;
+        height: 20%;
+        justify-content: center;
+        text-align: center;
     }
 }
