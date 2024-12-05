@@ -45,3 +45,32 @@ actualizarContador();
 
 // Configurar el intervalo para actualizar el contador cada segundo
 const intervalo = setInterval(actualizarContador, 1000);
+
+// boton para agendar fecha
+let botonFecha = document.getElementById('btnFecha');
+// boton para abrir mapa
+let botonMapa= document.getElementById('btnMapa');
+// boton para confirmar asistencia
+let botonConfirmar = document.getElementById('botonDeConfirmacion');
+botonConfirmar.addEventListener('click', ()=>{
+    console.log('boton de confirmar fue presionado');
+    const telefono = 5491150522026;
+    const mensaje = "Estare encantado de asistir al cumpleaños de pilar y acompañarla en esta noche tan especial!"
+    const url = `https://wa.me/${telefono}?text=${mensaje}`;
+    // generacion dinamica del mensaje
+    window.open(url, '_blank');
+})
+botonMapa.addEventListener('click', ()=>{
+    const urlMapa='https://maps.app.goo.gl/2u4MkXqA8VpEpnxGA';
+    window.open(urlMapa, "_blanck")
+})
+botonFecha.addEventListener('click', ()=>{
+    const title = encodeURIComponent("Cumpleaños de 15 pilar")
+    const fechaDeInicio = "20250222T00000Z"
+    const fechaDeCierre = "20250222T21000Z"
+    const detalle = encodeURIComponent("evento generado dinamicamente de prueba")
+    const location = encodeURIComponent("Cno. Gral. Belgrano 4745")
+    // generacion de url del calendario
+    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${fechaDeInicio}/${fechaDeCierre}&details=${detalle}&location=${location}&sf=true&output=xml`;
+    window.open(url, "_blank");
+})

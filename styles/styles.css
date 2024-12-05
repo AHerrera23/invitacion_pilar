@@ -6,31 +6,35 @@
 }
 body{
     background-color: #131313;
+    font-size: 16px;
 }
 span{
     font-family: "Cormorant Garamond", serif;
     color: #F2022D;
     font-weight: bold;
     font-style: italic;
-    font-size: 26px;
+    font-size: 1.6rem;
+}
+.spanTitulo{
+    font-size: 3rem;
 }
 h1{
     font-family: "Cormorant Garamond", serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 42px;
+    font-size: 4rem;
 }
 h2{
     font-family: "Cormorant Garamond", serif;
     font-weight: medium;
     font-style: italic;
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 h3{
     font-family: "Cormorant Garamond", serif;
     font-weight: normal;
     font-style: italic;
-    font-size: 24px;
+    font-size: 1.8rem;
 }
 button{
     font-family:"Cormorant Garamond", serif;
@@ -42,7 +46,6 @@ button{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 20px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .videoFondo{
@@ -50,22 +53,18 @@ button{
     position: absolute;
     width: 100vw; 
     height: 100vh;
+    grid-column: 1/5;
+    grid-row: 1/5;
 }
 .mobile{
     display: none;
 }
-.blur{
-    z-index: -1;
-    position: absolute;
-    width: 100vw; 
-    height: 100vh;
-    background-color: #0000008f;
-}
 .marco{
+    grid-column: 1/5;
+    grid-row: 1/5;
     width: 100vw;
     height: 100vh;
     z-index: 0;
-    position: absolute;
 }
 .contenidoPortada{
     z-index: 2;

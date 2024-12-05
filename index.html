@@ -14,19 +14,14 @@
     />
   </head>
   <body>
-    <video autoplay muted loop class="videoFondo deskt">
-      <source src="video/fondo_pilar.mp4">
-    </video>
-    <video autoplay muted loop class="videoFondo mobile">
-      <source src="video/fondo_pilar mobile.mp4">
-    </video>
-    <div class="blur"></div>
     <section class="portada">
-      <img src="images/marco-deskt.png" class="marco deskt" alt="marco">
-      <img src="images/pngegg (2) 1.png" class="marco mobile" alt="marco" />
+      <img src="images/marco.png" class="marco mobile" alt="marco" />
+      <video autoplay muted loop class="videoFondo mobile">
+        <source src="video/fondo_pilar mobile.mp4">
+      </video>
       <div class="contenidoPortada">
         <h1>Pilar</h1>
-        <h2>Mis <span>XV</span> años</h2>
+        <h2>Mis <span class="spanTitulo">XV</span> años</h2>
       </div>
       <div class="contenidoPortada2">
         <h3>
@@ -36,7 +31,6 @@
       </div>
     </section>
     <section class="contador">
-      <img class="marcoContador mobile" src="images/marco-secundario-blanco.png" alt="marco de seccion">
       <div class="cuentaAtras">
         <div class="faltaDias">
           <h3 id="diasFaltantes"> faltan <span id="dia"></span> dias.</h>
@@ -61,21 +55,20 @@
       </div>
     </section>
     <section class="mapa">
-      <img class="marcoMapa" src="images/marco-negro.png" alt="">
       <div class="datos">
         <h3><span>Celebracion</span></h3>
         <hr class="linea">
         <h3>Dia</h3>
         <p>Lunes <span>5</span> de noviembre - <span>20</span>hs</p>
-        <button class="btn">Agendar fecha</button>
+        <button class="btn" id="btnFecha">Agendar fecha</button>
         <hr class="linea">
         <h3>Lugar</h3>
         <p>Salon <span>paris</span></p>
-        <button class="btn">Confirmar asistencia</button>
+        <button class="btn" id="botonDeConfirmacion">Confirmar asistencia</button>
         <hr class="linea">
         <h3>Direccion</h3>
         <p>av no se cuanto <span>N° 5555</span></p>
-        <button class="btn">Como llegar</button>
+        <button class="btn" id="btnMapa">Como llegar</button>
       </div>
     </section>
     <script src="js/main.js"></script>
