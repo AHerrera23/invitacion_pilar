@@ -134,7 +134,7 @@ p{
         padding-right: 1rem;
         grid-column: 1/5;
         grid-row: 1/5;
-        gap: 2rem;
+        gap: 4rem;
     }
     .subtitulos{
         margin-top: 4rem;
