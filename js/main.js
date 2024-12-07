@@ -73,7 +73,7 @@ copiar.addEventListener('click', () => {
 });
 botonConfirmar.addEventListener('click', ()=>{
     console.log('boton de confirmar fue presionado');
-    const telefono = 5491150522026;
+    const telefono = 5491161660591;
     const mensaje = "Estare encantado de asistir al cumpleaños de pilar y acompañarla en esta noche tan especial!"
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     // generacion dinamica del mensaje

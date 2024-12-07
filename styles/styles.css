@@ -61,18 +61,10 @@ p{
     font-size: 1rem;
     font-weight: 900;
 }
-.portada{
-    height: 98vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
 .videoFondo{
     z-index: -1;
-    position: absolute;
-    width: 100vw; 
-    height: 100vh;
+    position: absolute; 
+    height: 100%;
     grid-column: 1/5;
     grid-row: 1/5;
 }
@@ -85,16 +77,6 @@ p{
     width: 100vw;
     height: 100vh;
     z-index: 0;
-}
-.contenidoPortada{
-    z-index: 2;
-    color: #EDEDED;
-    grid-column: 1/5;
-    grid-row: 1;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20%;
-    width: 98%;
 }
 .portadaDeskt{
     height: 80vh;
@@ -113,38 +95,49 @@ p{
     height: 20vh;
     background-color: #F2022D;
 }
-.contenidoPortada2{
-    z-index: 2;
-    color: #EDEDED;
-    grid-column: 1/5;
-    grid-row: 3/4;
-    justify-content: center;
-    text-align: center;
-    margin: 10%;
-    width: 80%;
-}
 @media only screen and (max-width: 800px){
     .portadaDeskt{
         display: none;
     }
     .portada{
-        z-index: 1;
         height: 100vh;
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        column-gap: 1px;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color: #EDEDED;
+    }
+    .btnPrincipal{
+        background-color: #F2022D;
+        border: none;
+        width: 90%;
+        height:  6%;
+        font-style: italic;
+        font-size: 1.2rem;
+        border-radius: 20px;
+        color: #EDEDED;
+        transition: 0.3s ease-in;
+    }
+    .btnPrincipal:focus{
+        background-color: #b80022;
     }
     .mobile{
         display: grid;
     }
     .contenidoPortada{
-        margin-top: 20%;
-        width: 98%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        grid-column: 1/5;
+        grid-row: 1/5;
+        gap: 2rem;
     }
-    .contenidoPortada2{
-        margin: 10%;
-        width: 80%;
+    .subtitulos{
+        margin-top: 4rem;
     }
     /* seccion contador  */
     .contador{
