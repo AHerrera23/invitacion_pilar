@@ -93,3 +93,8 @@ botonFecha.addEventListener('click', ()=>{
     const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${fechaDeInicio}/${fechaDeCierre}&details=${detalle}&location=${location}&sf=true&output=xml`;
     window.open(url, "_blank");
 })
+
+// scroll suave del boton de home
+document.getElementById('btnHome').addEventListener('click', function(){
+    document.getElementById('seccion2').scrollIntoView({behavior: 'smooth'})
+})
