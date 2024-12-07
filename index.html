@@ -14,9 +14,12 @@
     />
   </head>
   <body>
-    <section class="portada">
-      <img src="images/marco.png" class="marco mobile" alt="marco" />
-      <video autoplay muted loop class="videoFondo mobile">
+    <section class="portadaDeskt">
+      <h2>Por favor, abre la invitacion desde tu celular.</h2>
+    </section>
+    <section class="portada mobile">
+      <img src="images/marco.png" class="marco" alt="marco" />
+      <video autoplay muted loop class="videoFondo">
         <source src="video/fondo_pilar mobile.mp4">
       </video>
       <div class="contenidoPortada">
@@ -30,7 +33,7 @@
         </h3>
       </div>
     </section>
-    <section class="contador">
+    <section class="contador mobile">
       <img class="marcoHorizantal" src="images/marco-secundario-blanco.png" alt="marco hotizontal">
       <div class="cuentaAtras">
         <div class="faltaDias">
@@ -55,24 +58,25 @@
         </div>
       </div>
     </section>
-    <section class="mapa">
+    <section class="mapa mobile">
       <div class="datos">
         <h3><span>Celebracion</span></h3>
         <hr class="linea">
         <h3>Dia</h3>
-        <p>Lunes <span>5</span> de noviembre - <span>20</span>hs</p>
+        <p>Sabado <span>22</span> de Febrero - <span>21</span>hs</p>
         <button class="btn" id="btnFecha">Agendar fecha</button>
         <hr class="linea">
-        <h3>Lugar</h3>
-        <p>Salon <span>paris</span></p>
-        <button class="btn" id="botonDeConfirmacion">Confirmar asistencia</button>
-        <hr class="linea">
         <h3>Direccion</h3>
-        <p>av no se cuanto <span>N° 5555</span></p>
+        <p>Salon <span>Clahe Eventos</span></p>
+        <p>Cno. Gral Belgrano <span>N°</span>4745</p>
         <button class="btn" id="btnMapa">Como llegar</button>
+        <hr class="linea">
+        <h3>Asistencia</h3>
+        <p>¿Vas a venir a <span>festejar</span>?</p>
+        <button class="btn" id="botonDeConfirmacion">Confirmar asistencia</button>
       </div>
     </section>
-    <section class="container-4">
+    <section class="container-4 mobile">
       <h4 class="dressCode">¿Como tenes que venir vestido?</h4>
       <img class="marcoHorizantal" src="images/marco-secundario-blanco.png" alt="marco hotizontal">
       <div class="contenedorIcono">
@@ -82,7 +86,7 @@
       <img class="vestido" src="images/dress_17905547.gif" alt="vestido">
       <img class="traje" src="images/tuxedo_11870936.gif" alt="traje">
     </section>
-    <section class="container-5">
+    <section class="container-5 mobile">
       <img class="marcoHorizantal" src="images/marco-secundario-blanco.png" alt="marcoHorizantal">
       <div class="contenidoDeRegalo" id="seccionDePago">
         <h4 class="gift">Si aparte de tu presencia, me queres regalar algo mas...</h4>
@@ -92,10 +96,24 @@
       <div class="contenedorCbu" id="cbuOculto">
         <h4>Este es mi cbu</h4>
         <div class="blockCBU">
-          <h4><span>Zenkoaishi</span></h4>
+          <h4><span id="valorCBU">Zenkoaishi</span></h4>
+          <button class="btn" id="btnCopiarCBU">Copiar CBU</button>
         </div>
       </div>
     </section>
+    <section class="container-6 mobile">
+      <img class="marcoHorizantal" src="images/marco-secundario-blanco.png" alt="marcoHorizantal">
+      <div class="despedida">
+        <h4>¡Deseo que juntos podamos disfrutar una noche increible!</h4>
+        <h2><span>Pilar</span></h2>
+        <img class="vino" src="images/wine_14204939.gif" alt="copa de vino en celebracion">
+      </div>
+    </section>
+    <footer class="footer">
+      <h5>Diseñado por <Span class="footerText">Abel Herrera</Span></h5>
+      <h5><span class="footerText">aherrera.dm@gmail.com</span></h5>
+      <h5>Recursos visuales por <span class="footerText">Freepik</span></h5>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

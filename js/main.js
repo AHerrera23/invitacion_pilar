@@ -2,7 +2,7 @@ console.log('its online');
 
 // Función de contador
 function actualizarContador() {
-    const fechaFinal = new Date('2024-11-09T17:01:00');
+    const fechaFinal = new Date('2025-02-22T21:00:00Z');
     const now = new Date();
     const tiempoRestante = fechaFinal - now;
 
@@ -56,10 +56,20 @@ let botonConfirmar = document.getElementById('botonDeConfirmacion');
 let botonCBU = document.getElementById('btnCBU');
 let seccionDePago = document.getElementById('seccionDePago');
 let cbu = document.getElementById('cbuOculto');
-
+// tomo el cbu con innertext
+const valorCBU = document.getElementById('valorCBU').innerText;
+//boton para copiar el cbu
+let copiar = document.getElementById('btnCopiarCBU');
+// mensaje de confirmacion
+let mensaje = document.getElementById('mensaje');
 botonCBU.addEventListener('click', () => {
     seccionDePago.style.display="none";
     cbu.style.display="flex";
+});
+
+copiar.addEventListener('click', () => {
+    navigator.clipboard.writeText(valorCBU);
+    alert("Copiaste el cbu con exito 🎁🖤")
 });
 botonConfirmar.addEventListener('click', ()=>{
     console.log('boton de confirmar fue presionado');
