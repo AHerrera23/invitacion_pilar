@@ -215,7 +215,10 @@ p{
         grid-column: 1/5;
     }
     .datos{
-        margin: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
         justify-content: center;
         align-items: center;
         text-align: center;
