@@ -203,7 +203,6 @@ p{
     }
     .mapa{
         background-color:#EDEDED;
-        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -216,7 +215,7 @@ p{
         grid-column: 1/5;
     }
     .datos{
-        margin: 12%;
+        margin: 3rem;
         justify-content: center;
         align-items: center;
         text-align: center;
