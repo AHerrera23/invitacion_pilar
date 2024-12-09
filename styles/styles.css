@@ -35,9 +35,9 @@ h2{
 }
 h3{
     font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
+    font-weight: 900;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 h4{
     font-weight: 400;
@@ -219,11 +219,25 @@ p{
         margin-bottom: 3rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
+        gap: 1rem;
         justify-content: center;
         align-items: center;
         text-align: center;
         grid-column:1/5;
         grid-row: 1/5;
+    }
+    .datos .titulo{
+        font-size: 1.8rem;
+    }
+    .datos h3{
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+    .datos p{
+        font-size: 1.3rem;
+    }
+    .datos span{
+        font-size: 1.3rem;
     }
     .linea{
         margin: 16px;
