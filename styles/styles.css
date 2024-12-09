@@ -37,7 +37,7 @@ h3{
     font-family: "Cormorant Garamond", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 h4{
     font-weight: 400;
@@ -203,11 +203,11 @@ p{
     }
     .mapa{
         background-color:#EDEDED;
-        height: 75vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 16px;
+        gap: 1rem;
     }
     .mapa .marcoMapa{
         width: 100%;
