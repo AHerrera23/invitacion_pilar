@@ -2,7 +2,7 @@ console.log('its online');
 
 // Función de contador
 function actualizarContador() {
-    const fechaFinal = new Date('2025-02-22T21:00:00Z');
+    const fechaFinal = new Date('2025-02-22T22:00:00Z');
     const now = new Date();
     const tiempoRestante = fechaFinal - now;
 
