@@ -74,7 +74,7 @@ copiar.addEventListener('click', () => {
 botonConfirmar.addEventListener('click', ()=>{
     console.log('boton de confirmar fue presionado');
     const telefono = 5491161660591;
-    const mensaje = "Estare encantado de asistir al cumpleaños de pilar y acompañarla en esta noche tan especial!"
+    const mensaje = "Estare encantado de asistir al cumpleaños de Pilar y acompañarla en esta noche tan especial!"
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     // generacion dinamica del mensaje
     window.open(url, '_blank');
@@ -87,7 +87,7 @@ botonFecha.addEventListener('click', ()=>{
     const title = encodeURIComponent("Cumpleaños de 15 pilar")
     const fechaDeInicio = "20250222T00000Z"
     const fechaDeCierre = "20250222T21000Z"
-    const detalle = encodeURIComponent("evento generado dinamicamente de prueba")
+    const detalle = encodeURIComponent("¡Hoy es el cumpleaños de 15 pilar!")
     const location = encodeURIComponent("Cno. Gral. Belgrano 4745")
     // generacion de url del calendario
     const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${fechaDeInicio}/${fechaDeCierre}&details=${detalle}&location=${location}&sf=true&output=xml`;
